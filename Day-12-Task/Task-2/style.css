@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    gap: 20px;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+.card{
+    width: 200px;
+    height: 30px;
+    transition: 300ms ease-in-out;
+    box-shadow: 0px 5px 10px 0px #0a0a0a7c;
+   
+
+}
+
+.card+ .card{
+
+    margin-left: -10%;
+}
+.card:hover{
+    transform: rotate(-6deg);
+}
+
+.card:hover~ .card{
+    translate: 80px;
+}
+body{
+    background-color: lightblue;
+}
+
+img{
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text{
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    color: white;
+}
